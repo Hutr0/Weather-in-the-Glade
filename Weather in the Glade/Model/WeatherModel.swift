@@ -33,7 +33,7 @@ struct WeatherModel {
         self.nameLabel = json.name
         self.weatherDescription = json.weather[0].description.prefix(1).uppercased() + json.weather[0].description.dropFirst()
         self.weatherImage = json.weather[0].icon
-        self.tempLabel = String(Int(json.main.temp)).uppercased()
+        self.tempLabel = "\(Int(json.main.temp))"
         self.feelsLikeLabel = "Ощущается как \(Int(json.main.feels_like))"
         self.cloudyLabel = "Облачность: \(json.main.humidity)%"
         

@@ -47,6 +47,7 @@ class ViewController: UIViewController {
                 self.cloudyLabel.text = weather.cloudyLabel
                 self.visibilityLabel.text = weather.visibilityLabel
                 self.windLabel.text = weather.windLabel
+                self.pressureLabel.text = weather.pressureLabel
                 self.humidityLabel.text = weather.humidityLabel
             }
         }
