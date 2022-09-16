@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather_in_the_Glade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redGlade" translatesAutoresizingMaskIntoConstraints="NO" id="LzQ-cr-SUh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Красная Поляна" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMs-Db-dIC">
+                                <rect key="frame" x="0.0" y="83" width="393" height="48"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="40"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dM-2r-lMN">
+                                <rect key="frame" x="153.66666666666666" y="139" width="86" height="30"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dil-t5-cgY">
+                                <rect key="frame" x="126.66666666666669" y="233" width="140" height="72"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="60"/>
+                                <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-1V-Xpe">
+                                <rect key="frame" x="247.66666666666663" y="130" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="1Fh-EB-1aB"/>
+                                    <constraint firstAttribute="height" constant="48" id="RDW-BV-J8F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Il-5b-qrw">
+                                <rect key="frame" x="174.66666666666666" y="313" width="44" height="24"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="20"/>
+                                <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" alpha="0.75" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dkB-Wh-5v3">
+                                <rect key="frame" x="16" y="401" width="361" height="401"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbl-CV-yfE">
+                                        <rect key="frame" x="16" y="16" width="72.333333333333329" height="67.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visibility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yy-5E-VKv">
+                                        <rect key="frame" x="16" y="91.333333333333314" width="88.333333333333329" height="67.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wind" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-Rc-lFV">
+                                        <rect key="frame" x="16" y="166.66666666666663" width="51" height="67.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pressure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6z1-vO-jBk">
+                                        <rect key="frame" x="16" y="242.3333333333334" width="90" height="67.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liy-bO-eHy">
+                                        <rect key="frame" x="16" y="317.66666666666663" width="92.666666666666671" height="67.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                        <color key="textColor" red="0.99065420559999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="dkB-Wh-5v3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Mb-v3-XRl"/>
+                            <constraint firstItem="0dM-2r-lMN" firstAttribute="top" secondItem="NMs-Db-dIC" secondAttribute="bottom" constant="8" id="3gE-Z0-ZJR"/>
+                            <constraint firstItem="8Il-5b-qrw" firstAttribute="top" secondItem="Dil-t5-cgY" secondAttribute="bottom" constant="8" id="6tt-6U-eHt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NMs-Db-dIC" secondAttribute="trailing" id="7b3-6C-zo6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dkB-Wh-5v3" secondAttribute="bottom" constant="16" id="8SR-eA-kOf"/>
+                            <constraint firstItem="Dil-t5-cgY" firstAttribute="top" secondItem="0dM-2r-lMN" secondAttribute="bottom" constant="64" id="BmH-wG-lOk"/>
+                            <constraint firstItem="NMs-Db-dIC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="F08-EY-b8P"/>
+                            <constraint firstAttribute="bottom" secondItem="LzQ-cr-SUh" secondAttribute="bottom" id="GsQ-on-ho6"/>
+                            <constraint firstItem="8Il-5b-qrw" firstAttribute="centerX" secondItem="Dil-t5-cgY" secondAttribute="centerX" id="HU1-dQ-f07"/>
+                            <constraint firstItem="y6A-1V-Xpe" firstAttribute="leading" secondItem="0dM-2r-lMN" secondAttribute="trailing" constant="8" id="Mzq-U3-fz4"/>
+                            <constraint firstItem="LzQ-cr-SUh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XIE-Cy-aF8"/>
+                            <constraint firstItem="LzQ-cr-SUh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="asF-fP-Z54"/>
+                            <constraint firstItem="LzQ-cr-SUh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cmo-iD-hY0"/>
+                            <constraint firstItem="NMs-Db-dIC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kM6-Ux-ZSV"/>
+                            <constraint firstItem="0dM-2r-lMN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mAn-4L-4NJ"/>
+                            <constraint firstItem="dkB-Wh-5v3" firstAttribute="top" secondItem="8Il-5b-qrw" secondAttribute="bottom" constant="64" id="msw-bD-FJj"/>
+                            <constraint firstItem="y6A-1V-Xpe" firstAttribute="centerY" secondItem="0dM-2r-lMN" secondAttribute="centerY" id="nQq-3U-4TP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dkB-Wh-5v3" secondAttribute="trailing" constant="16" id="qCG-sl-YlD"/>
+                            <constraint firstItem="Dil-t5-cgY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tBc-yI-my4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cloudyLabel" destination="jbl-CV-yfE" id="RsL-sC-cEn"/>
+                        <outlet property="feelsLikeLabel" destination="8Il-5b-qrw" id="1zW-i6-DJB"/>
+                        <outlet property="humidityLabel" destination="Liy-bO-eHy" id="mWR-ZJ-DnI"/>
+                        <outlet property="nameLabel" destination="NMs-Db-dIC" id="Xo2-bE-9ex"/>
+                        <outlet property="pressureLabel" destination="6z1-vO-jBk" id="Yhe-Q3-XVh"/>
+                        <outlet property="stackView" destination="dkB-Wh-5v3" id="EIb-kg-DBX"/>
+                        <outlet property="tempLabel" destination="Dil-t5-cgY" id="AqQ-ei-91c"/>
+                        <outlet property="visibilityLabel" destination="4yy-5E-VKv" id="KdE-Uh-WpP"/>
+                        <outlet property="weatherDescription" destination="0dM-2r-lMN" id="cgB-rg-Gfz"/>
+                        <outlet property="weatherImage" destination="y6A-1V-Xpe" id="ZgL-kv-Qbk"/>
+                        <outlet property="windLabel" destination="YeV-Rc-lFV" id="ihu-KZ-BU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="-17.605633802816904"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="redGlade" width="2236.5" height="1531.5"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
